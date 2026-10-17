@@ -1,16 +1,16 @@
 # Regenerate_Debian13_Machine
 
-# Cambiar hostname
+### Change hostname
 ```bash
 hostnamectl set-hostname NUEVO_HOSTNAME
 ```
 
-# Actualizar /etc/hosts
+### Update /etc/hosts
 ```bash
 nano /etc/hosts
 ```
 
-# Regenerar machine-id
+### Regenerate machine-id
 ```bash
 rm -f /etc/machine-id
 ```
@@ -18,7 +18,7 @@ rm -f /etc/machine-id
 systemd-machine-id-setup
 ```
 
-# Regenerar claves SSH
+### Regenerate SSH Keygen
 ```bash
 rm -f /etc/ssh/ssh_host_*
 ```
@@ -26,17 +26,17 @@ rm -f /etc/ssh/ssh_host_*
 dpkg-reconfigure openssh-server
 ```
 
-# Verificar machine-id nuevo
+### Verifiy  new machine-id
 ```bash
 cat /etc/machine-id
 ```
 
-# Verificar hostname
+### Verify hostname
 ```bash
 hostnamectl
 ```
 
-# Reiniciar
+### Reboot machine
 ```bash
 reboot
 ```
