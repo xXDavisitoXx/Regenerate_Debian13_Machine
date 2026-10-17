@@ -2,6 +2,7 @@
 <p align="center">
   <img src="Images/Regenerate-Debian-Cover.jpg" alt="Regenerate-Debian-Cover" width="100%">
 </p>
+
 ### Change hostname
 ```bash
 hostnamectl set-hostname NUEVO_HOSTNAME
